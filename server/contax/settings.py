@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'contaxapi.apps.ContaxapiConfig',
     'corsheaders',
+    'contaxapp',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ MIDDLEWARE = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-ROOT_URLCONF = 'api.urls'
+ROOT_URLCONF = 'contax.urls'
 
 TEMPLATES = [
     {
@@ -74,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'api.wsgi.application'
+WSGI_APPLICATION = 'contax.wsgi.application'
 
 
 # Database
