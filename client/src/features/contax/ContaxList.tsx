@@ -4,17 +4,9 @@ import { makeStyles } from '@material-ui/core/styles'
 
 import { 
   List, ListItem, ListItemText 
-} from '@material-ui/core';
+} from '@material-ui/core'
 
 import { selectContacts } from "./contactsSlice"
-
-// import {
-//   decrement,
-//   increment,
-//   incrementByAmount,
-//   incrementAsync,
-//   selectCount,
-// } from './counterSlice';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,7 +18,6 @@ function ContaxList() {
   const classes = useStyles()
 
   const contacts = useSelector(selectContacts)
-  console.log(contacts)
 
   return contacts && contacts.length ? (
     <List className={classes.root} subheader={<li />}>
@@ -39,4 +30,4 @@ function ContaxList() {
   ) : null
 }
 
-export default ContaxList;
+export default ContaxList

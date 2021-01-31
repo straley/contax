@@ -19,5 +19,11 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('contaxapi.urls')),
-    path('', include('contaxapp.urls'))
+    path('', include('contaxapp.urls')),
+    path('manifest.json', include('contaxapp.urls')),
+    path('asset-manifest.json', include('contaxapp.urls')),
+    path('favicon.ico', include('contaxapp.urls')),
+    path('logo192.png', include('contaxapp.urls')),
+    path('logo512.png', include('contaxapp.urls')),
+    path('robots.txt', include('contaxapp.urls')),
 ]
